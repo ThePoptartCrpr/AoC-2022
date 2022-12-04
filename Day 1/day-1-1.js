@@ -1,4 +1,5 @@
 const fs = require('fs')
+const utils = require('../utils/utils.js');
 
 fs.readFile('./Day 1/input/1-1-calories', 'utf8', (err, data) => {
     if (err) {
@@ -28,6 +29,6 @@ fs.readFile('./Day 1/input/1-1-calories', 'utf8', (err, data) => {
             }
         }
 
-        console.log(`The elf carrying the most Calories is Elf #${richestBastard + 1}, carrying a total of ${mostCalories} Calories.`);
+        utils.formatAnswer(`The elf carrying the most Calories is Elf #<${richestBastard + 1}>, carrying a total of <${mostCalories}> Calories.`);
     }
 });

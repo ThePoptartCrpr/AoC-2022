@@ -1,4 +1,5 @@
-const fs = require('fs')
+const fs = require('fs');
+const utils = require('../utils/utils.js');
 
 fs.readFile('./Day 1/input/1-1-calories', 'utf8', (err, data) => {
     if (err) {
@@ -28,6 +29,6 @@ fs.readFile('./Day 1/input/1-1-calories', 'utf8', (err, data) => {
 
         let grandTotal = mostCalories[0] + mostCalories[1] + mostCalories[2];
 
-        console.log(`The total amount of Calories held by the three top elves is ${grandTotal} Calories.`);
+        utils.formatAnswer(`The total amount of Calories held by the three top elves is <${grandTotal}> Calories.`);
     }
 });
