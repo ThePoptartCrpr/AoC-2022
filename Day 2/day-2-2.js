@@ -30,6 +30,6 @@ fs.readFile('./Day 2/input/2-1-rps.txt', 'utf8', (err, data) => {
             score += (choice == 'X' ? 1 : choice == 'Y' ? 2 : choice == 'Z' ? 3 : 0);
         };
 
-        utils.formatAnswer(`The projected score is <${score}>.`)
+        utils.formatAnswer(`The projected score is <${score}>.`);
     }
 });
