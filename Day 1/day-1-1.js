@@ -1,4 +1,4 @@
-const fs = require('fs')
+const fs = require('fs');
 const utils = require('../utils/utils.js');
 
 fs.readFile('./Day 1/input/1-1-calories', 'utf8', (err, data) => {
