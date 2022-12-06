@@ -30,6 +30,6 @@ fs.readFile('./Day 5/input/5-crates.txt', 'utf8', (err, data) => {
             final_top.push(stack[0]);
         }
         
-        utils.formatAnswer(`The final top crate in each stack is: <${final_top}>.`)
+        utils.formatAnswer(`The final top crate in each stack is: <${final_top}>.`);
     }
 });
